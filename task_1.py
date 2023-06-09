@@ -18,11 +18,3 @@ for num in A:
     if num == X:
         countX += 1
 print(f'Количество повторений числа {X} в массиве -> {countX}')
-
-
-
-
-
-
-
-
