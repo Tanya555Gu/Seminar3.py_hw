@@ -10,7 +10,7 @@ from random import randint
 N = int(input('Укажите количество элементов в массиве N: '))
 A = []
 for i in range (N):
-    A.append(randint(-10, 10))
+    A.append(randint(1, 10))
 print(A)
 X = int(input('Укажите чило X: '))
 countX = 0
