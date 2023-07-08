@@ -7,19 +7,19 @@
 # -> 5
 
 from random import randint
-N = int(input('Укажите количество элементов в массиве N: '))
-A = []
-for i in range(N):
+n = int(input('Укажите количество элементов в массиве N: '))
+list1 = []
+for i in range(n):
     # A.append(i + 1)
-    A.append(randint(1, 10))
-print(A)
-X = int(input('Укажите чило X: '))
-minDif = abs(X - A[0])
-closeX = A[0]
-for i in range(1, len(A)):
-    dif = abs(X - A[i])
+    list1.append(randint(1, 10))
+print(list1)
+x = int(input('Укажите чило x: '))
+minDif = abs(x - list1[0])
+closeX = list1[0]
+for i in range(1, len(list1)):
+    dif = abs(x - list1[i])
     if dif <= minDif:
         minDif = dif
-        closeX = A[i]
-print(f'Близкий по величине элемент к заданному числу X: {closeX}')
+        closeX = list1[i]
+print(f'Близкий по величине элемент к заданному числу x: {closeX}')
 

@@ -7,14 +7,14 @@
 # -> 1
 
 from random import randint
-N = int(input('Укажите количество элементов в массиве N: '))
-A = []
-for i in range (N):
-    A.append(randint(1, 10))
-print(A)
-X = int(input('Укажите чило X: '))
+n = int(input('Укажите количество элементов в массиве n: '))
+list1 = []
+for i in range (n):
+    list1.append(randint(1, 10))
+print(list1)
+x = int(input('Укажите чило x: '))
 countX = 0
-for num in A:
-    if num == X:
+for num in list1:
+    if num == x:
         countX += 1
-print(f'Количество повторений числа {X} в массиве -> {countX}')
+print(f'Количество повторений числа {x} в массиве -> {countX}')

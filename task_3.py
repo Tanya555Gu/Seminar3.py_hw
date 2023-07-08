@@ -28,10 +28,10 @@
 #         'Q' : '10', 'Z' : '10'}
 # word = input('Введите слово -> ')
 # word = word.upper()
-# cost = 0
+# costW = 0
 # for i in range(len(word)):
-#     cost += int(dictE[word[i]]) 
-# print(f'Стоимость слова равна -> {cost}')
+#     costW += int(dictE[word[i]]) 
+# print(f'Стоимость слова равна -> {costW}')
 
 dictR = {
         'А' : '1', 'В' : '1', 'Е' : '1', 'И' : '1', 'Н' : '1', 'О' : '1', 'Р' : '1', 'С' : '1', 'Т' : '1',
@@ -44,7 +44,7 @@ dictR = {
         }
 word = input('Введите слово -> ')
 word = word.upper()
-cost = 0
+costW = 0
 for i in range(len(word)):
-    cost += int(dictR[word[i]]) 
-print(f'Стоимость слова равна -> {cost}')
+    costW += int(dictR[word[i]]) 
+print(f'Стоимость слова равна -> {costW}')
